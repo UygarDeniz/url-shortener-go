@@ -1,0 +1,50 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build artifacts, and coverage reports
+*.out
+*.test
+*.log
+*.cover
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Generated binaries
+**/bin/
+generation-service/generation-service
+reading-service/reading-service
+
+# Environment files
+.env
+.env.local
+*.env
+
+# AWS files
+.aws/
+credentials
+*_config.json
+
+# Docker volumes
+data/
+
+# Deployment artifacts
+*.pem
+*.tfstate
+*.tfvars
+.terraform/
