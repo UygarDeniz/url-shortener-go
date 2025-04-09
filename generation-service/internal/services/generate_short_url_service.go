@@ -6,7 +6,6 @@ import (
 	"errors"
 	"log"
 	"math/big"
-	"time"
 
 	appErrors "github.com/uygardeniz/url-shortening/generation-service/internal/errors"
 	"github.com/uygardeniz/url-shortening/generation-service/internal/ports"
@@ -40,7 +39,6 @@ func (s *GenerateShortURLService) GenerateShortCode(ctx context.Context, origina
 		urlMapping := &types.URL{
 			ShortCode:   shortCode,
 			OriginalURL: originalURL,
-			CreatedAt:   time.Now().Unix(),
 		}
 
 		err = s.urlRepository.StoreURL(ctx, urlMapping)
